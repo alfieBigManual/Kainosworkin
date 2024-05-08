@@ -1,19 +1,20 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Kainos Work Experience</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="icon" type="image/x-icon" href="cat.ico">
-  <style>
-
-  </style>
+    <title>The inovative Website of Breakout 1 </title>
 </head>
-
 <body>
-  <h1> Hello World </h1>
+    <h1>Welcome to the proposition of Quantum Drug research!</h1>
+    <p id="timeParagraph">The current time is:</p>
 
-  <script src="script.js"></script>
-
+    <script>
+        function updateTime() {
+            var date = new Date();
+            var time = date.toLocaleTimeString();
+            document.getElementById("timeParagraph").innerHTML = "The current time is: " + time;
+        }
+        // Update the time every second
+        setInterval(updateTime, 1000);
+    </script>
+</body>
 </html>
