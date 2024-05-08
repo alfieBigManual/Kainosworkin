@@ -7,10 +7,22 @@
             background-image: url('https://go.zageno.com/hubfs/Imported_Blog_Media/drug-development-zageno.jpg');
             background-repeat: no-repeat;
             background-size: cover;
+            position: relative; 
+        }
+        
+        
+       .background-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); 
         }
     </style>
 </head>
 <body>
+    <div class="background-overlay"></div> 
     <h1>Welcome to the proposition of Quantum Drug research!</h1>
     <p id="timeParagraph">The current time is:</p>
 
@@ -20,7 +32,7 @@
             var time = date.toLocaleTimeString();
             document.getElementById("timeParagraph").innerHTML = "The current time is: " + time;
         }
-        // Update the time every second
+        
         setInterval(updateTime, 1000);
     </script>
 </body>
